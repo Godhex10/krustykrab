@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 380">
+  <g stroke="#2a120e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- legs -->
+    <path d="M140 300 L132 368 L144 370 L152 300 Z" fill="#e2382c"/>
+    <path d="M190 300 L196 370 L208 368 L202 300 Z" fill="#e2382c"/>
+    <!-- arms -->
+    <path d="M80 190 Q40 190 40 150" fill="none" stroke-width="9"/>
+    <path d="M80 190 Q40 190 40 150" fill="none" stroke="#e2382c" stroke-width="5"/>
+    <path d="M260 190 Q300 190 300 150" fill="none" stroke-width="9"/>
+    <path d="M260 190 Q300 190 300 150" fill="none" stroke="#e2382c" stroke-width="5"/>
+    <!-- claws -->
+    <g transform="translate(40 120)">
+      <path d="M-30 30 C-40 -10 -10 -40 10 -30 C0 -10 6 0 18 4 C20 20 10 34 -6 38 Z" fill="#e2382c"/>
+      <path d="M-4 -14 C10 -40 40 -30 36 -6 C24 -10 16 -4 18 4" fill="#e2382c"/>
+    </g>
+    <g transform="translate(300 120) scale(-1 1)">
+      <path d="M-30 30 C-40 -10 -10 -40 10 -30 C0 -10 6 0 18 4 C20 20 10 34 -6 38 Z" fill="#e2382c"/>
+      <path d="M-4 -14 C10 -40 40 -30 36 -6 C24 -10 16 -4 18 4" fill="#e2382c"/>
+    </g>
+    <!-- money in claw -->
+    <g transform="translate(250 60) rotate(-18)">
+      <rect x="0" y="0" width="70" height="36" rx="3" fill="#8fd17a"/>
+      <rect x="6" y="5" width="58" height="26" rx="2" fill="none" stroke="#2f6b2a" stroke-width="2.5"/>
+      <circle cx="35" cy="18" r="10" fill="#c9eebd" stroke="#2f6b2a" stroke-width="2.5"/>
+      <text x="35" y="24" font-family="Arial Black, sans-serif" font-size="15" text-anchor="middle" fill="#2f6b2a" stroke="none">$</text>
+    </g>
+    <!-- pants -->
+    <path d="M100 255 L240 255 L238 305 L102 305 Z" fill="#2c5aa0"/>
+    <!-- shirt / body -->
+    <path d="M70 160 C70 90 120 70 170 70 C220 70 270 90 270 160 C270 210 250 250 240 258 L100 258 C90 250 70 210 70 160 Z" fill="#e2382c"/>
+    <path d="M86 205 C110 200 230 200 254 205 C250 230 244 248 240 258 L100 258 C96 248 90 230 86 205 Z" fill="#7cc2f0"/>
+    <path d="M150 200 L170 230 L190 200" fill="#e2382c"/>
+    <!-- belt -->
+    <rect x="98" y="250" width="144" height="16" fill="#6b4423"/>
+    <rect x="158" y="247" width="24" height="22" rx="3" fill="#ffd34d"/>
+    <!-- eye stalks -->
+    <path d="M150 85 L142 40" stroke-width="12"/>
+    <path d="M150 85 L142 40" stroke="#e2382c" stroke-width="5"/>
+    <path d="M190 85 L198 40" stroke-width="12"/>
+    <path d="M190 85 L198 40" stroke="#e2382c" stroke-width="5"/>
+    <!-- eyes -->
+    <circle cx="140" cy="32" r="24" fill="#fff"/>
+    <circle cx="200" cy="32" r="24" fill="#fff"/>
+    <circle cx="146" cy="34" r="8" fill="#1d1d1d" stroke="none"/>
+    <circle cx="194" cy="34" r="8" fill="#1d1d1d" stroke="none"/>
+    <circle cx="149" cy="31" r="2.5" fill="#fff" stroke="none"/>
+    <circle cx="197" cy="31" r="2.5" fill="#fff" stroke="none"/>
+    <!-- brows -->
+    <path d="M120 98 L156 108" stroke-width="6"/>
+    <path d="M220 98 L184 108" stroke-width="6"/>
+    <!-- mouth -->
+    <path d="M118 140 Q170 185 222 140" fill="#7a1010"/>
+    <path d="M132 146 Q170 160 208 146 L206 152 Q170 166 134 152 Z" fill="#fff" stroke-width="3"/>
+    <!-- cheek lines -->
+    <path d="M110 132 q-6 8 0 14 M230 132 q6 8 0 14" fill="none" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <g stroke="#3a1420" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- star body -->
+    <path d="M150 18 C162 18 172 90 180 130 C230 140 285 165 280 185 C276 200 225 200 200 205 C200 240 205 300 196 330 L180 362 C170 372 160 360 156 340 L150 300 L144 340 C140 360 130 372 120 362 L104 330 C95 300 100 240 100 205 C75 200 24 200 20 185 C15 165 70 140 120 130 C128 90 138 18 150 18 Z" fill="#f9a3b5"/>
+    <!-- belly shading -->
+    <ellipse cx="150" cy="200" rx="40" ry="30" fill="#fbbfcb" stroke="none"/>
+    <!-- shorts -->
+    <path d="M100 235 C130 228 170 228 200 235 L204 300 L160 300 L150 280 L140 300 L96 300 Z" fill="#8bd16a"/>
+    <g fill="#9b59c7" stroke="#3a1420" stroke-width="2.5">
+      <circle cx="118" cy="256" r="9"/><circle cx="178" cy="262" r="9"/><circle cx="150" cy="248" r="7"/><circle cx="120" cy="288" r="7"/><circle cx="185" cy="290" r="7"/>
+    </g>
+    <g fill="#ffd34d" stroke="none">
+      <circle cx="118" cy="256" r="3"/><circle cx="178" cy="262" r="3"/><circle cx="150" cy="248" r="2.5"/><circle cx="120" cy="288" r="2.5"/><circle cx="185" cy="290" r="2.5"/>
+    </g>
+    <!-- eyes -->
+    <ellipse cx="136" cy="96" rx="13" ry="16" fill="#fff"/>
+    <ellipse cx="164" cy="96" rx="13" ry="16" fill="#fff"/>
+    <circle cx="139" cy="99" r="5" fill="#111" stroke="none"/>
+    <circle cx="161" cy="99" r="5" fill="#111" stroke="none"/>
+    <path d="M122 72 q12 -8 22 0 M156 72 q12 -8 22 0" fill="none" stroke-width="4"/>
+    <!-- mouth -->
+    <path d="M118 128 Q150 165 182 128 Q150 145 118 128 Z" fill="#a8243a"/>
+    <path d="M140 146 q10 6 20 0" fill="none" stroke="#f26a85" stroke-width="5"/>
+    <!-- spots -->
+    <g fill="#e2708a" stroke="none" opacity=".6">
+      <circle cx="60" cy="175" r="3"/><circle cx="240" cy="180" r="3"/><circle cx="150" cy="40" r="3"/><circle cx="118" cy="340" r="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Krusty Krab | Home of the Krabby Patty</title>
+  <meta name="description" content="Eat a burger from Mr. Krabs. Krabby Patties, Kelp Shakes and more at the Krusty Krab, Bikini Bottom." />
+  <link rel="icon" href="assets/krabby-patty.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="assets/krabby-patty.webp" alt="" class="loader__patty" />
+      <p class="loader__text">Flipping patties<span class="dots"></span></p>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <!-- floating bubbles + grain -->
+  <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ================== SCREEN 1 : HERO ================== -->
+  <section class="screen screen--red" id="home">
+    <div class="sheet sheet--hero">
+      <header class="nav">
+        <button class="nav__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav__links">
+          <a href="#menu" class="tag">SALES</a>
+          <a href="#about" class="tag">ABOUT</a>
+          <a href="#home" class="nav__logo">The Krusty Krab<i></i></a>
+          <a href="#location" class="tag">LOCATION</a>
+          <a href="#menu" class="tag">PRICES</a>
+        </nav>
+        <button class="cart-btn" id="cartOpen" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+      </header>
+
+      <div class="hero">
+        <div class="hero__band" aria-hidden="true"></div>
+
+        <div class="hero__scene" data-parallax>
+          <h2 class="hero__scribble" data-depth="0.3">KRUSTY KRABS</h2>
+          <figure class="hero__building" data-depth="0.25">
+            <img src="assets/krusty-krab.webp" alt="The Krusty Krab restaurant in Bikini Bottom" />
+            <span class="tape tape--l"></span><span class="tape tape--r"></span>
+          </figure>
+          <img src="assets/spongebob.webp" alt="SpongeBob holding a spatula" class="hero__sponge" data-depth="0.9" />
+        </div>
+
+        <div class="hero__title reveal">
+          <h1>
+            <span class="line">EAT A BURGER FROM</span>
+            <span class="line line--red glitch" data-text="MR. KRABS">MR. KRABS</span>
+          </h1>
+          <p class="hero__sub">Fresh Krabby Patties since forever. Made with love, and a <em>secret</em> formula.</p>
+          <a href="#menu" class="btn btn--red">ORDER NOW <span>→</span></a>
+        </div>
+
+        <div class="hero__krabs">
+          <span class="money-word money-word--1">MONEY</span>
+          <span class="money-word money-word--2">MONEY</span>
+          <span class="money-word money-word--3">MONEY</span>
+          <div class="hero__mat"></div>
+          <img src="assets/mr-krabs.webp" alt="Mr. Krabs holding money" class="hero__mrkrabs" />
+          <img src="assets/jellyfish.webp" alt="" class="jelly jelly--1" />
+          <img src="assets/jellyfish.webp" alt="" class="jelly jelly--2" />
+          <img src="assets/jellyfish.webp" alt="" class="jelly jelly--3" />
+          <div class="money-rain" id="moneyRain"></div>
+        </div>
+
+        <div class="hero__menu">
+          <h3 class="hero__menu-title">MENU</h3>
+          <button class="mini-item" data-goto="jelly-patty">
+            <s class="price">11.99$</s>
+            <img src="assets/jelly-patty.svg" alt="Jelly Patty" />
+            <span>JELLY PATTY</span>
+          </button>
+          <button class="mini-item" data-goto="krabby-patty">
+            <s class="price">8.99$</s>
+            <img src="assets/krabby-patty.webp" alt="Krabby Patty" />
+            <span>KRABBY PATTY</span>
+          </button>
+          <button class="mini-item" data-goto="kelp-shake">
+            <s class="price">4.99$</s>
+            <img src="assets/kelp-shake.svg" alt="Kelp Shake" />
+            <span>KELP SHAKE</span>
+          </button>
+          <a href="#menu" class="full-list">FULL LIST</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ticker -->
+  <div class="ticker-wrap">
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>ORDER UP!</span><span>★</span><span>KRABBY PATTIES</span><span>★</span><span>NO SHIRT, NO SHOES, NO SERVICE</span><span>★</span><span>I'M READY!</span><span>★</span><span>KELP SHAKES</span><span>★</span><span>BIKINI BOTTOM'S FINEST</span><span>★</span>
+      <span>ORDER UP!</span><span>★</span><span>KRABBY PATTIES</span><span>★</span><span>NO SHIRT, NO SHOES, NO SERVICE</span><span>★</span><span>I'M READY!</span><span>★</span><span>KELP SHAKES</span><span>★</span><span>BIKINI BOTTOM'S FINEST</span><span>★</span>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================== SCREEN 2 : MENU LIST ================== -->
+  <section class="screen screen--yellow" id="menu">
+    <div class="sheet sheet--menu">
+      <div class="title-box reveal">
+        <h2 class="title">ME<span class="hl">NU LIST</span></h2>
+      </div>
+      <span class="tag tag--dark reveal">CHOOSE ONE OR SOME</span>
+
+      <div class="menu">
+        <div class="menu__grid" id="menuGrid">
+          <!-- generated by JS -->
+        </div>
+
+        <aside class="detail reveal" id="detail" aria-live="polite">
+          <div class="detail__head">
+            <span class="detail__name" id="detailName">KELP SHAKE</span>
+            <span class="detail__price" id="detailPrice">4,99$</span>
+          </div>
+          <div class="detail__card">
+            <span class="tag tag--dark">INGREDIENTS:</span>
+            <ul class="detail__list" id="detailList"></ul>
+            <div class="detail__qty">
+              <button class="qty-btn" id="qtyMinus" aria-label="Less">−</button>
+              <span id="qtyVal">1</span>
+              <button class="qty-btn" id="qtyPlus" aria-label="More">+</button>
+            </div>
+            <button class="add-cart" id="addToCart">
+              <svg viewBox="0 0 48 40" width="46" height="40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6l5 22h24l5-16H12"/><circle cx="16" cy="34" r="3"/><circle cx="34" cy="34" r="3"/><circle cx="28" cy="12" r="8" fill="#fff"/><path d="M28 8v8M24 12h8"/></svg>
+              <span>ADD TO CART</span>
+            </button>
+          </div>
+        </aside>
+
+        <div class="feature" id="feature">
+          <div class="feature__band"></div>
+          <img src="assets/kelp-shake.svg" alt="" class="feature__img" id="featureImg" />
+          <div class="feature__corner" aria-hidden="true">
+            <span>4,99$ 4,99$ 4,99$</span><span>4,99$ 4,99$ 4,99$</span><span>4,99$ 4,99$ 4,99$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== SCREEN 3 : WHAT IS A KRABBY PATTY ================== -->
+  <section class="screen screen--red screen--low" id="about">
+    <div class="sheet sheet--about">
+      <span class="tag tag--dark tag--corner">2 ABOUT CATEGORY</span>
+      <div class="title-box reveal">
+        <h2 class="title">WHAT IS A KRA<span class="hl">BBY PATTY?</span></h2>
+      </div>
+
+      <div class="about">
+        <div class="money-matrix" id="matrix" aria-hidden="true"></div>
+
+        <div class="secret reveal">
+          <span class="secret__label">KRABBY PATTY</span>
+          <div class="secret__card">
+            <span class="tag tag--dark">INGRIDIENTS:</span>
+            <p class="secret__word" id="secretWord">SECRET<b>.</b></p>
+            <a href="#crew" class="scroll-down">SCROLL DOWN <span>▼</span></a>
+          </div>
+          <img src="assets/formula-bottle.webp" alt="The secret formula in a bottle" class="secret__bottle" />
+        </div>
+
+        <img src="assets/krabby-patty.webp" alt="A giant Krabby Patty" class="about__burger" id="bigBurger" />
+
+        <div class="itsme" id="itsMe">
+          <span class="itsme__arrow">↓</span>
+          <div class="itsme__box">
+            <span>it is me</span>
+            <button class="itsme__plus" id="itsMeBtn" aria-label="Who is it?">+</button>
+          </div>
+          <img src="assets/plankton.webp" alt="Plankton" class="itsme__plankton" />
+          <p class="itsme__bubble">I WILL GET THAT FORMULA!</p>
+        </div>
+
+        <div class="formula reveal">
+          <span class="formula__label">SECRET FORMULA · SECRET FORMULA ·</span>
+          <img src="assets/formula.svg" alt="The Krabby Patty secret formula" class="formula__img" id="formulaImg" />
+          <button class="tag tag--dark formula__watch" id="watchIt">WATCH IT</button>
+        </div>
+      </div>
+
+      <div class="about__text reveal">
+        <p>The <strong>Krabby Patty</strong> is the most famous burger in Bikini Bottom: a grilled patty, crisp sea lettuce, tomato, onion, pickles, cheese and a toasted sesame bun. The recipe sits locked in Mr. Krabs' safe, and Plankton has tried to steal it more times than anyone can count.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== SCREEN 4 : THE CREW ================== -->
+  <section class="screen screen--blue" id="crew">
+    <div class="sheet sheet--crew">
+      <div class="title-box reveal">
+        <h2 class="title">MEET THE <span class="hl">CREW</span></h2>
+      </div>
+      <span class="tag tag--dark reveal">CLICK A CARD</span>
+
+      <div class="crew">
+        <article class="crew-card reveal" data-quote="I'm ready! I'm ready! I'm ready!">
+          <div class="crew-card__bg" style="--c:#ffe94a"></div>
+          <img src="assets/spongebob.webp" alt="SpongeBob SquarePants" />
+          <h3>SPONGEBOB</h3>
+          <p>Fry Cook · Employee of the Month</p>
+          <span class="crew-card__quote"></span>
+        </article>
+        <article class="crew-card reveal" data-quote="Money! Money! Money! Arg arg arg!">
+          <div class="crew-card__bg" style="--c:#ff6b5a"></div>
+          <img src="assets/mr-krabs.webp" alt="Mr. Krabs" />
+          <h3>MR. KRABS</h3>
+          <p>Owner · Loves money</p>
+          <span class="crew-card__quote"></span>
+        </article>
+        <article class="crew-card reveal" data-quote="Welcome to the Krusty Krab. May I take your order?">
+          <div class="crew-card__bg" style="--c:#9fd3c7"></div>
+          <img src="assets/squidward.webp" alt="Squidward Tentacles" />
+          <h3>SQUIDWARD</h3>
+          <p>Cashier · Clarinet player</p>
+          <span class="crew-card__quote"></span>
+        </article>
+        <article class="crew-card reveal" data-quote="Is mayonnaise an instrument?">
+          <div class="crew-card__bg" style="--c:#f9a3b5"></div>
+          <img src="assets/patrick.webp" alt="Patrick Star" />
+          <h3>PATRICK</h3>
+          <p>Best customer · Rock dweller</p>
+          <span class="crew-card__quote"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== SCREEN 5 : LOCATION ================== -->
+  <section class="screen screen--yellow" id="location">
+    <div class="sheet sheet--location">
+      <div class="title-box reveal">
+        <h2 class="title">FIND <span class="hl">US</span></h2>
+      </div>
+
+      <div class="location">
+        <div class="location__map reveal">
+          <div class="map">
+            <span class="map__tag">BIKINI ATOLL · MARSHALL ISLANDS</span>
+            <div class="map__frame">
+              <iframe
+                src="https://www.google.com/maps?q=Bikini+Atoll,+Marshall+Islands&amp;t=k&amp;z=10&amp;output=embed"
+                title="Google Map of Bikini Atoll, Marshall Islands"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="location__info reveal">
+          <div class="info-card">
+            <span class="tag tag--dark">ADDRESS:</span>
+            <p>831 Bottom Feeder Lane<br />Bikini Bottom, Pacific Ocean</p>
+            <p class="real-world">Directly under Bikini Atoll, Marshall Islands.</p>
+          </div>
+          <div class="info-card">
+            <span class="tag tag--dark">HOURS:</span>
+            <ul class="hours">
+              <li><span>MON – FRI</span><span>9AM – 9PM</span></li>
+              <li><span>SATURDAY</span><span>10AM – 10PM</span></li>
+              <li><span>SUNDAY</span><span>OPEN (KRABS SAYS)</span></li>
+            </ul>
+            <p class="open-now" id="openNow">● CHECKING...</p>
+          </div>
+          <div class="info-card info-card--red">
+            <p>NO SHIRT, NO SHOES,<br /><strong>NO SERVICE.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logo">The Krusty Krab<i></i></div>
+    <p>© Krusty Krab Inc. A fan-made tribute to Bikini Bottom.</p>
+    <a href="#home" class="footer__top">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">✕</button>
+    <a href="#home">HOME</a>
+    <a href="#menu">MENU</a>
+    <a href="#about">ABOUT</a>
+    <a href="#crew">CREW</a>
+    <a href="#location">LOCATION</a>
+    <img src="assets/spongebob.webp" alt="" class="mobile-menu__sponge" />
+  </div>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart__head">
+      <h3>YOUR ORDER</h3>
+      <button class="cart__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <ul class="cart__items" id="cartItems"></ul>
+    <div class="cart__foot">
+      <div class="cart__total"><span>TOTAL</span><span id="cartTotal">0.00$</span></div>
+      <button class="btn btn--red btn--block" id="checkout">ORDER UP!</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240">
+  <defs>
+    <radialGradient id="bun" cx=".4" cy=".3" r=".8">
+      <stop offset="0" stop-color="#f6c66a"/>
+      <stop offset=".7" stop-color="#d9902f"/>
+      <stop offset="1" stop-color="#b56d1e"/>
+    </radialGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a4425"/>
+      <stop offset="1" stop-color="#4a2512"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#2a160a" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="150" cy="222" rx="120" ry="12" fill="#000" opacity=".15" stroke="none"/>
+    <!-- bottom bun -->
+    <path d="M38 180 Q36 212 70 214 L230 214 Q264 212 262 180 Z" fill="url(#bun)"/>
+    <!-- patty -->
+    <path d="M30 150 Q28 130 60 128 L240 128 Q272 130 270 150 Q272 176 240 178 L60 178 Q28 176 30 150 Z" fill="url(#meat)"/>
+    <g stroke="#8f5531" stroke-width="3" fill="none">
+      <path d="M60 145 q10 -4 20 0 M110 160 q12 -4 22 0 M180 148 q10 -4 20 0 M220 162 q10 -3 18 0"/>
+    </g>
+    <!-- cheese -->
+    <path d="M36 126 L264 126 L250 140 L238 160 L224 140 L120 140 L104 164 L92 140 L40 140 Z" fill="#ffcf33"/>
+    <!-- tomato -->
+    <path d="M44 116 Q150 104 256 116 L256 128 Q150 120 44 128 Z" fill="#e8402f"/>
+    <!-- lettuce -->
+    <path d="M26 112 Q40 96 54 110 Q66 94 80 108 Q94 94 108 108 Q122 94 136 108 Q150 94 164 108 Q178 94 192 108 Q206 94 220 108 Q234 94 248 108 Q262 96 274 112 Q260 124 244 118 Q228 128 212 118 Q196 128 180 118 Q164 128 148 118 Q132 128 116 118 Q100 128 84 118 Q68 128 52 118 Q38 124 26 112 Z" fill="#6fcf4a"/>
+    <!-- onion -->
+    <path d="M80 104 q20 -8 40 0 M170 104 q20 -8 40 0" fill="none" stroke="#e4d4f2" stroke-width="5"/>
+    <!-- top bun -->
+    <path d="M30 104 C30 40 90 18 150 18 C210 18 270 40 270 104 Q150 114 30 104 Z" fill="url(#bun)"/>
+    <path d="M70 50 Q100 30 140 28" fill="none" stroke="#ffe3a6" stroke-width="7" opacity=".8"/>
+    <!-- sesame -->
+    <g fill="#fff7e0" stroke="#b07a3a" stroke-width="1.5">
+      <ellipse cx="100" cy="56" rx="6" ry="3" transform="rotate(-20 100 56)"/>
+      <ellipse cx="150" cy="44" rx="6" ry="3"/>
+      <ellipse cx="200" cy="58" rx="6" ry="3" transform="rotate(20 200 58)"/>
+      <ellipse cx="125" cy="76" rx="6" ry="3" transform="rotate(10 125 76)"/>
+      <ellipse cx="175" cy="78" rx="6" ry="3" transform="rotate(-10 175 78)"/>
+      <ellipse cx="70" cy="82" rx="6" ry="3" transform="rotate(-30 70 82)"/>
+      <ellipse cx="230" cy="84" rx="6" ry="3" transform="rotate(30 230 84)"/>
+      <ellipse cx="150" cy="92" rx="5" ry="2.5"/>
+    </g>
+  </g>
+</svg>

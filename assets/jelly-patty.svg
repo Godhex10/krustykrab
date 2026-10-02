@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260">
+  <defs>
+    <radialGradient id="jbun" cx=".4" cy=".3" r=".8">
+      <stop offset="0" stop-color="#f6c66a"/>
+      <stop offset=".7" stop-color="#d9902f"/>
+      <stop offset="1" stop-color="#b56d1e"/>
+    </radialGradient>
+    <linearGradient id="jelly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5fc3ff"/>
+      <stop offset="1" stop-color="#1f6fd1"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#14213d" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="150" cy="244" rx="125" ry="12" fill="#1f6fd1" opacity=".25" stroke="none"/>
+    <!-- jelly puddle -->
+    <path d="M20 230 Q30 214 60 218 L250 218 Q284 216 284 234 Q270 246 150 246 Q30 246 20 230 Z" fill="url(#jelly)"/>
+    <!-- bottom bun -->
+    <path d="M38 186 Q36 216 70 218 L230 218 Q264 216 262 186 Z" fill="url(#jbun)" stroke="#2a160a"/>
+    <!-- patty -->
+    <path d="M30 156 Q28 136 60 134 L240 134 Q272 136 270 156 Q272 182 240 184 L60 184 Q28 182 30 156 Z" fill="#5a2f17" stroke="#2a160a"/>
+    <!-- jelly layer with drips -->
+    <path d="M24 122 L276 122 L276 136 Q270 150 262 140 L258 176 Q250 192 242 176 L236 140 L190 140 L186 200 Q176 218 166 200 L160 140 L110 140 L106 168 Q98 182 90 168 L84 140 L56 140 L52 206 Q42 224 32 206 L28 140 Q22 134 24 122 Z" fill="url(#jelly)"/>
+    <g fill="#ffffff" stroke="none" opacity=".75">
+      <ellipse cx="40" cy="196" rx="3" ry="6"/><ellipse cx="174" cy="190" rx="3" ry="6"/><ellipse cx="250" cy="166" rx="2.5" ry="5"/><ellipse cx="100" cy="132" rx="20" ry="3"/>
+    </g>
+    <!-- top bun -->
+    <path d="M30 118 C30 50 90 28 150 28 C210 28 270 50 270 118 Q150 128 30 118 Z" fill="url(#jbun)" stroke="#2a160a"/>
+    <path d="M70 60 Q100 40 140 38" fill="none" stroke="#ffe3a6" stroke-width="7" opacity=".8"/>
+    <!-- jelly drips over the top -->
+    <path d="M110 34 Q150 24 196 36 Q210 44 200 54 Q194 76 186 54 Q170 50 160 62 Q154 86 146 62 Q132 52 120 58 Q112 70 106 54 Q98 42 110 34 Z" fill="url(#jelly)"/>
+    <g fill="#fff7e0" stroke="#b07a3a" stroke-width="1.5">
+      <ellipse cx="80" cy="80" rx="6" ry="3" transform="rotate(-25 80 80)"/>
+      <ellipse cx="225" cy="80" rx="6" ry="3" transform="rotate(25 225 80)"/>
+      <ellipse cx="130" cy="96" rx="6" ry="3"/>
+      <ellipse cx="185" cy="98" rx="6" ry="3"/>
+      <ellipse cx="240" cy="104" rx="5" ry="2.5"/>
+      <ellipse cx="60" cy="104" rx="5" ry="2.5"/>
+    </g>
+  </g>
+</svg>

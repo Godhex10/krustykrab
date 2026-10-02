@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320">
+  <g stroke="#0f2a3a" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="100" cy="308" rx="60" ry="8" fill="#000" opacity=".15" stroke="none"/>
+    <!-- straw -->
+    <path d="M110 70 L130 10" stroke-width="13"/>
+    <path d="M110 70 L130 10" stroke="#e8402f" stroke-width="6"/>
+    <!-- foam -->
+    <path d="M38 80 Q30 56 56 58 Q62 38 86 46 Q100 30 118 46 Q142 38 146 58 Q172 56 162 80 Z" fill="#ffffff"/>
+    <!-- cup -->
+    <path d="M36 80 L164 80 L148 300 L52 300 Z" fill="#59c6d9"/>
+    <path d="M40 100 L160 100" stroke-width="3"/>
+    <path d="M60 110 L66 290" stroke="#c5f2fa" stroke-width="8" opacity=".9"/>
+    <!-- stripes -->
+    <path d="M44 160 L156 160 L152 210 L48 210 Z" fill="#fff"/>
+    <text x="100" y="193" font-family="'Arial Black', Impact, sans-serif" font-size="20" text-anchor="middle" fill="#0f6f8a" stroke="none">SODA</text>
+    <g fill="none" stroke="#c5f2fa" stroke-width="2.5">
+      <circle cx="120" cy="240" r="6"/><circle cx="100" cy="270" r="4"/><circle cx="130" cy="130" r="5"/>
+    </g>
+  </g>
+</svg>

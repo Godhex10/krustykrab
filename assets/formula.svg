@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf0d2"/>
+      <stop offset="1" stop-color="#e6cf98"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#3a2a12" stroke-width="3.5" stroke-linejoin="round">
+    <path d="M20 30 L60 22 L70 30 L120 18 L180 26 L230 14 L300 28 L292 70 L304 120 L290 170 L298 220 L240 214 L200 226 L140 214 L80 224 L30 214 L16 170 L28 120 L14 70 Z" fill="url(#paper)"/>
+    <path d="M40 200 q30 -10 60 2 M220 40 q20 4 40 -2" fill="none" stroke="#c9a868" stroke-width="3"/>
+    <g font-family="'Courier New', monospace" fill="#2a1a08" stroke="none" font-weight="700" transform="rotate(-8 160 120)">
+      <text x="160" y="72" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="34">SECRET</text>
+      <text x="160" y="108" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="30">FORMULA</text>
+      <text x="64" y="140" font-size="15">for Krabby Patties</text>
+      <text x="64" y="160" font-size="14">2 cups ████ ███</text>
+      <text x="64" y="178" font-size="14">1 tsp ██████</text>
+      <text x="64" y="196" font-size="14">a pinch of ████</text>
+    </g>
+  </g>
+</svg>

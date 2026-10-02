@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280">
+  <g stroke="#2a120e" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="120" cy="268" rx="80" ry="9" fill="#000" opacity=".15" stroke="none"/>
+    <!-- coral sticks -->
+    <g fill="#ff8a5c">
+      <path d="M70 130 L58 40 Q56 28 66 30 L74 70 L80 34 Q84 24 90 34 L88 130 Z"/>
+      <path d="M95 130 L96 20 Q98 8 108 14 L110 60 L122 28 Q128 20 132 30 L118 130 Z"/>
+      <path d="M125 130 L140 34 Q144 22 152 30 L150 66 L168 42 Q176 36 178 46 L150 130 Z"/>
+      <path d="M150 130 L176 70 Q182 60 188 70 L170 130 Z"/>
+      <path d="M52 130 L40 76 Q38 64 48 66 L66 130 Z"/>
+    </g>
+    <g fill="none" stroke="#ffc2a8" stroke-width="3">
+      <path d="M64 50 l4 50 M102 30 v60 M142 50 l-8 50"/>
+    </g>
+    <!-- box -->
+    <path d="M40 110 L200 110 L180 262 L60 262 Z" fill="#e8402f"/>
+    <path d="M40 110 Q120 140 200 110" fill="#c22d1f"/>
+    <path d="M70 150 L170 150 L162 230 L78 230 Z" fill="#fff4e0" stroke-width="3"/>
+    <text x="120" y="182" font-family="'Arial Black', Impact, sans-serif" font-size="22" text-anchor="middle" fill="#e8402f" stroke="none">CORAL</text>
+    <text x="120" y="212" font-family="'Arial Black', Impact, sans-serif" font-size="22" text-anchor="middle" fill="#e8402f" stroke="none">BITS</text>
+  </g>
+</svg>

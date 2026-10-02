@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+  <g stroke="#3a1c3d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- pole -->
+    <rect x="92" y="150" width="16" height="240" fill="#7a4a24"/>
+    <path d="M96 170 v200" stroke="#a9733e" stroke-width="3"/>
+    <ellipse cx="100" cy="392" rx="38" ry="8" fill="#5a3518"/>
+    <!-- lower shell -->
+    <path d="M30 120 Q100 190 170 120 Q150 160 100 168 Q50 160 30 120 Z" fill="#c77bb0"/>
+    <!-- upper shell (scalloped fan) -->
+    <path d="M22 118 C10 70 40 18 100 14 C160 18 190 70 178 118 C160 130 140 132 100 132 C60 132 40 130 22 118 Z" fill="#f4a9d0"/>
+    <g fill="none" stroke="#b4609a" stroke-width="3">
+      <path d="M100 18 V128"/>
+      <path d="M60 26 Q55 80 62 130"/>
+      <path d="M140 26 Q145 80 138 130"/>
+      <path d="M32 60 Q34 100 40 124"/>
+      <path d="M168 60 Q166 100 160 124"/>
+    </g>
+    <!-- plaque -->
+    <rect x="44" y="44" width="112" height="72" rx="10" fill="#fff4fb"/>
+    <text x="100" y="66" font-family="'Arial Black', Impact, sans-serif" font-size="13" text-anchor="middle" fill="#3a1c3d" stroke="none">THE</text>
+    <text x="100" y="86" font-family="'Arial Black', Impact, sans-serif" font-size="17" text-anchor="middle" fill="#3a1c3d" stroke="none" font-style="italic">KRUSTY</text>
+    <text x="100" y="107" font-family="'Arial Black', Impact, sans-serif" font-size="17" text-anchor="middle" fill="#3a1c3d" stroke="none" font-style="italic">KRAB</text>
+  </g>
+</svg>

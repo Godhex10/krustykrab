@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420">
+  <g stroke="#1d2e2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tentacles -->
+    <g fill="#9fd3c7">
+      <path d="M100 300 C95 340 80 370 60 390 C75 395 95 385 110 360 C118 340 120 320 122 300 Z"/>
+      <path d="M130 300 C128 340 120 375 110 400 C125 402 138 385 144 360 C148 340 148 320 148 300 Z"/>
+      <path d="M170 300 C172 340 180 375 190 400 C175 402 162 385 156 360 C152 340 152 320 152 300 Z"/>
+      <path d="M200 300 C205 340 220 370 240 390 C225 395 205 385 190 360 C182 340 180 320 178 300 Z"/>
+    </g>
+    <!-- arms -->
+    <path d="M95 225 Q60 260 70 300" fill="none" stroke-width="13"/>
+    <path d="M95 225 Q60 260 70 300" fill="none" stroke="#9fd3c7" stroke-width="6"/>
+    <path d="M205 225 Q240 260 230 300" fill="none" stroke-width="13"/>
+    <path d="M205 225 Q240 260 230 300" fill="none" stroke="#9fd3c7" stroke-width="6"/>
+    <!-- shirt -->
+    <path d="M95 210 C110 205 190 205 205 210 L215 305 L85 305 Z" fill="#b5703a"/>
+    <path d="M85 290 H215" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M128 185 L124 215 L176 215 L172 185 Z" fill="#9fd3c7"/>
+    <!-- head -->
+    <path d="M150 20 C220 20 240 70 235 110 C230 150 200 175 175 185 L125 185 C100 175 70 150 65 110 C60 70 80 20 150 20 Z" fill="#9fd3c7"/>
+    <path d="M90 50 q20 -20 50 -22" fill="none" stroke="#c9ece3" stroke-width="7"/>
+    <!-- eyes (droopy) -->
+    <ellipse cx="122" cy="112" rx="24" ry="30" fill="#fdf6c6"/>
+    <ellipse cx="178" cy="112" rx="24" ry="30" fill="#fdf6c6"/>
+    <circle cx="124" cy="122" r="8" fill="#b02424" stroke="none"/>
+    <circle cx="176" cy="122" r="8" fill="#b02424" stroke="none"/>
+    <circle cx="124" cy="122" r="3.5" fill="#111" stroke="none"/>
+    <circle cx="176" cy="122" r="3.5" fill="#111" stroke="none"/>
+    <path d="M98 108 Q122 92 146 108 L146 100 Q122 78 98 100 Z" fill="#7fb8aa"/>
+    <path d="M154 108 Q178 92 202 108 L202 100 Q178 78 154 100 Z" fill="#7fb8aa"/>
+    <!-- nose -->
+    <path d="M140 132 C130 160 128 200 140 222 C150 236 168 230 166 210 C164 190 162 160 160 132 Z" fill="#9fd3c7"/>
+    <path d="M146 150 q-6 30 0 60" fill="none" stroke="#c9ece3" stroke-width="4"/>
+    <!-- mouth -->
+    <path d="M118 176 q12 -4 22 0 M160 176 q12 -4 22 0" fill="none" stroke-width="4"/>
+  </g>
+</svg>
